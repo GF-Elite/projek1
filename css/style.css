@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #212121;
+}
+
+.heading {
+  font-family: "Quicksand", sans-serif !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subheading {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  background-color: #212121 !important;
+}
+
+.dropdown-menu {
+  background-color: #212121;
+  border: 2px solid white;
+}
+.dropdown-menu .dropdown-item {
+  color: white;
+  transition: all 0.5s ease;
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: red;
+}
+
+.navbar-brand span {
+  color: #ff0000;
+}
+
+.navlink {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: #ff0000 !important;
+}
+
+/* END OF NAVBAR */
+/* HOME */
+.home {
+  z-index: 3;
+  flex-direction: row;
+  margin-bottom: -3.5rem;
+}
+.home .row {
+  margin-top: 100px;
+}
+.home .home-detail {
+  width: 60%;
+}
+.home .heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-size: 17px;
+}
+.home .heading span {
+  color: #ff0000;
+}
+.home .btn-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .btn-home .btn-contact {
+  font-size: 15px;
+  background-color: #ffffff;
+  color: black;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  border: 5px solid #323232;
+  border-radius: 50px;
+}
+.home .btn-home .btn-contact:hover {
+  background-color: #212121;
+  color: #ffffff;
+}
+.home .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.home .img-container img {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* END OF HOME */
+/* ABOUT ME */
+.aboutme {
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #323232;
+  min-height: 700px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.aboutme .col {
+  padding-top: 5rem;
+}
+.aboutme h1 {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif !important;
+}
+.aboutme h2 {
+  font-size: 30px;
+}
+.aboutme .social-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.aboutme .social-icon i {
+  font-size: 25px;
+  margin-right: 2rem;
+  color: white;
+  transition: all 0.5s ease;
+}
+.aboutme .social-icon i:hover {
+  color: red;
+}
+.aboutme .social-icon .box {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+.aboutme .left-aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+}
+.aboutme .progress-menu h4 {
+  font-weight: 700;
+}
+.aboutme .progress-menu .figma,
+.aboutme .progress-menu .wordpress,
+.aboutme .progress-menu .html {
+  margin-top: 1rem;
+}
+.aboutme .progress-menu .progress {
+  background-color: black;
+}
+.aboutme .progress-menu .progress .progress-bar {
+  background-color: red;
+}
+
+/* END OF ABOUT ME */
+/* MY PROJECT */
+.myproject {
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  min-height: 1000px;
+}
+.myproject .col {
+  width: 50%;
+  margin-top: 8rem;
+}
+.myproject .col h1 {
+  font-family: "Quicksand", sans-serif !important;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.myproject a.col-lg-3 {
+  width: auto;
+}
+.myproject .project {
+  width: 20rem;
+  height: 15rem;
+  border-radius: 10px;
+  border: 5px inset #323232;
+  border-radius: 40px;
+}
+.myproject .project-1 {
+  background-image: url("../img/project/bio.PNG"); /*  masukan url projek mu yang ada di index html*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* END OF MY PROJECT */
+/* INTERNSHIP */
+.internship {
+  margin-top: 5rem;
+  min-height: 450px;
+  color: white;
+  text-align: center;
+  font-family: "Quicksand", sans-serif !important;
+}
+.internship .internship-box {
+  padding: 2.5rem 0;
+  background-color: red;
+  width: 100%;
+  height: 15rem;
+  border-radius: 40px;
+}
+.internship .internship-box h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.internship .internship-box .btn {
+  margin-top: 1rem;
+  border: none;
+  background-color: #212121;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+  border-radius: 40px;
+  width: 12rem;
+  height: 60px;
+  transition: all 0.5s ease;
+}
+.internship .internship-box .btn:hover {
+  background-color: #ffffff;
+  color: #212121;
+}
+
+/* END OF INTERNSHIP */
+/* MEDIA QUERY */
+@media only screen and (min-width: 342px) {
+  .home .heading {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 396px) {
+  .home .heading {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 485px) {
+  .home .heading {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 570px) {
+  .home .heading {
+    font-size: 31px;
+  }
+  .internship h2 {
+    padding-top: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home .home-detail {
+    margin-top: 2rem;
+    width: 50%;
+  }
+  .home .heading {
+    font-size: 33px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .home .img-container {
+    width: 50%;
+  }
+  .home .btn-home {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .aboutme {
+    min-height: 500px;
+    margin-top: -8rem;
+    text-align: start;
+  }
+  .aboutme .social-icon {
+    justify-content: start;
+  }
+  .internship h2 {
+    margin-top: -1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .home {
+    margin-top: 8rem;
+  }
+  .home img.img-fluid.human-img {
+    width: 80%;
+  }
+  .home .heading {
+    font-size: 43px;
+  }
+  .navbar-nav {
+    gap: 3rem;
+  }
+  .aboutme {
+    margin-top: -8rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .home .heading {
+    font-size: 53px;
+  }
+  .aboutme {
+    margin-top: -10rem;
+  }
+  .myproject {
+    min-height: auto;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .home .heading {
+    font-size: 70px;
+  }
+  .home .home-detail {
+    margin-top: 4rem;
+  }
+  .aboutme {
+    margin-top: -9rem;
+  }
+  .internship h2 {
+    padding-top: 4rem;
+  }
+  .internship .internship-box {
+    height: 20rem;
+  }
+  .internship .internship-box h2 {
+    font-size: 40px;
+  }
+  .internship .internship-box .btn-lg {
+    margin-top: 4rem;
+  }
+}
+/* END OF MEDIA QUERY *//*# sourceMappingURL=style.css.map */
