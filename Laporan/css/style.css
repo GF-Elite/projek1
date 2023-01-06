@@ -152,21 +152,11 @@ body {
 .myproject .produk-perusahaan {
   gap: 1rem;
 }
-.myproject .microsoft {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/LaporanWebPhoto/jasa-microsoftOffice.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.myproject .photoshop {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/LaporanWebPhoto/jasa-photoshop.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
+
 .myproject .web {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/LaporanWebPhoto/jasa-web.png");
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../
+  background-size: cover;../img/LaporanWebPhoto/jasa-web.png");
   background-position: center;
   background-repeat: no-repeat;
 }
