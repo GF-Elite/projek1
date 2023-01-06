@@ -220,6 +220,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.myproject .project-2 {
+  background-image: url("../img/project/projek2.PNG"); /*  masukan url projek mu yang ada di index html*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* END OF MY PROJECT */
