@@ -411,12 +411,7 @@ body {
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .container p {
   font-size: 3rem;
   padding: 0.5rem;
