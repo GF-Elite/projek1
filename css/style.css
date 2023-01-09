@@ -418,7 +418,7 @@ body {
 }
 .container p span.cursor {
   display: inline-block;
-  background-color: rgb(206, 49, 49);
+  background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
