@@ -373,3 +373,72 @@ body {
   }
 }
 /* END OF MEDIA QUERY *//*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero{
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  padding-top: 100px;
+  text-align: center;
+  height: 100vh;
+  background: url('../images/do-something.jpg')no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-inner{
+  max-width: 1200px;
+  color: #fff;
+}
+
+.hero-inner h2{
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hero-inner h1{
+  margin: 0;
+  font-size: 4rem;
+  text-transform: uppercase;
+  /* letter-spacing: 2rem; */
+  color: #1c61e2;
+  letter-spacing: 15px;
+}
+
+.hero-inner h3{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin:0;
+  color: #fff;
+  padding-bottom: 10px;
+
+}
+
+.hero-inner .typing{
+  transition: all 0.3s ease;
+}
+
+.hero-inner h3 .typing{
+  color: #1c61e2;
+  opacity: 1;
+}
+
+.hero-inner h3 .typewrite{
+  color: #1c61e2;
+
+}
