@@ -442,3 +442,58 @@ body {
   color: #1c61e2;
 
 }
+
+@-webkit-keyframes blink-type{
+  0% { opacity: 1; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink-type{
+  50% {opacity: 0.0;}
+}
+
+.hero{
+  font-size: 1.18rem;
+  line-height: 1.8;
+}
+
+.hero-inner .hire:hover{
+  background: none;
+  color: #fff;
+  border: 1px solid #1c61e2;
+
+}
+
+.hero-inner .hire{  
+  background-color: none;
+  text-decoration: none;
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 1.18rem;
+  text-transform: capitalize;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+
+.hero-inner .social{
+  margin-top: 40px;
+  padding: 20px 0;
+  text-decoration: none;
+
+}
+.hero-inner .social a{
+  margin: 15px 5px;
+  padding: 15px 15px;
+  border: 1px solid #fff;
+  color: #1c61e2;
+  border-radius: 50%;
+}
+
+.hero-inner .social a:hover{
+  color: #fff;
+  border: 1px solid #1c61e2;
+
+}
