@@ -412,14 +412,6 @@ body {
 
 
 
-.container p {
-  font-size: 3rem;
-  padding: 0.5rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  overflow: hidden;
-}
 .container p span.typed-text {
   font-weight: normal;
   color: #dd7732;
