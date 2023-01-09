@@ -388,112 +388,14 @@ body {
 
 
 
-.hero{
+.typing-container {
   display: flex;
-  justify-content: center; 
-  align-items: flex-start;
-  padding-top: 100px;
-  text-align: center;
-  height: 100vh;
-  background: url('../images/do-something.jpg')no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.hero-inner{
-  max-width: 1200px;
-  color: #fff;
-}
-
-.hero-inner h2{
-  font-weight: 300;
-  font-size: 2rem;
-  margin: 0;
-}
-
-.hero-inner h1{
-  margin: 0;
-  font-size: 4rem;
-  text-transform: uppercase;
-  /* letter-spacing: 2rem; */
-  color: #1c61e2;
-  letter-spacing: 15px;
-}
-
-.hero-inner h3{
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin:0;
-  color: #fff;
-  padding-bottom: 10px;
-
-}
-
-.hero-inner .typing{
-  transition: all 0.3s ease;
-}
-
-.hero-inner h3 .typing{
-  color: #1c61e2;
-  opacity: 1;
-}
-
-.hero-inner h3 .typewrite{
-  color: #1c61e2;
-
-}
-
-@-webkit-keyframes blink-type{
-  0% { opacity: 1; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1; }
-}
-
-@keyframes blink-type{
-  50% {opacity: 0.0;}
-}
-
-.hero{
-  font-size: 1.18rem;
-  line-height: 1.8;
-}
-
-.hero-inner .hire:hover{
-  background: none;
-  color: #fff;
-  border: 1px solid #1c61e2;
-
-}
-
-.hero-inner .hire{  
-  background-color: none;
-  text-decoration: none;
-  color: #fff;
-  padding: 7px 20px;
-  border-radius: 8px;
-  font-weight: 300;
-  font-size: 1.18rem;
-  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;}
+.input-cursor {
   display: inline-block;
-  border: 1px solid #fff;
-}
-
-.hero-inner .social{
-  margin-top: 40px;
-  padding: 20px 0;
-  text-decoration: none;
-
-}
-.hero-inner .social a{
-  margin: 15px 5px;
-  padding: 15px 15px;
-  border: 1px solid #fff;
-  color: #1c61e2;
-  border-radius: 50%;
-}
-
-.hero-inner .social a:hover{
-  color: #fff;
-  border: 1px solid #1c61e2;
-
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  margin-left: 8px;
 }
