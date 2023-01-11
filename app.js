@@ -1,67 +1,52 @@
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+const carouselText = [
+  {text: "Apple", color: "red"},
+  {text: "Orange", color: "orange"},
+  {text: "Lemon", color: "yellow"}
+]
 
-const textArray = ["programmer", "gaming", "siswa", "gabut"];
-const typingDelay = 200;
-const erasingDelay = 100;
-const newTextDelay = 1000; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
-
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-  	setTimeout(erase, newTextDelay);
-  }
-}
-
-function erase() {
-	if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
-    setTimeout(type, typingDelay + 1100);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
+$( document ).ready(async function() {
+  carousel(carouselText, "#feature-text")
 });
 
-document.addEventListener("click",function (e){
-  if(e.target.classList.contains("gallery-item")){
-      const src = e.target.getAttribute("src");
-      document.querySelector(".modal-img").src = src;
-      const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
-      myModal.show();
+async function typeSentence(sentence, eleRef, delay = 100) {
+  const letters = sentence.split("");
+  let i = 0;
+  while(i < letters.length) {
+    await waitForMs(delay);
+    $(eleRef).append(letters[i]);
+    i++
   }
-})
+  return;
+}
 
-var isNS = (navigator.appName == &quot;Netscape&quot;) ? 1 : 0;
-if(navigator.appName == &quot;Netscape&quot;) document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-function mischandler(){
-return false;
+async function deleteSentence(eleRef) {
+  const sentence = $(eleRef).html();
+  const letters = sentence.split("");
+  let i = 0;
+  while(letters.length > 0) {
+    await waitForMs(100);
+    letters.pop();
+    $(eleRef).html(letters.join(""));
+  }
 }
-function mousehandler(e){
-var myevent = (isNS) ? e : event;
-var eventbutton = (isNS) ? myevent.which : myevent.button;
-if((eventbutton==1)||(eventbutton==2)||(eventbutton==3)) {
- alert("copyThieft");
- return false;
- }
+
+async function carousel(carouselList, eleRef) {
+    var i = 0;
+    while(true) {
+      updateFontColor(eleRef, carouselList[i].color)
+      await typeSentence(carouselList[i].text, eleRef);
+      await waitForMs(1500);
+      await deleteSentence(eleRef);
+      await waitForMs(500);
+      i++
+      if(i >= carouselList.length) {i = 0;}
+    }
 }
-document.oncontextmenu = mischandler;
-document.onmousedown = mousehandler;
-document.onmouseup = mousehandler;
+
+function updateFontColor(eleRef, color) {
+  $(eleRef).css('color', color);
+}
+
+function waitForMs(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
