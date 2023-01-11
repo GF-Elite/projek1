@@ -8,7 +8,7 @@ $( document ).ready(async function() {
   carousel(carouselText, "#feature-text")
 });
 
-async function typetulisansentence, eleRef, delay = 100) {
+async function typeSentence(sentence, eleRef, delay = 100) {
   const letters = sentence.split("");
   let i = 0;
   while(i < letters.length) {
@@ -19,9 +19,9 @@ async function typetulisansentence, eleRef, delay = 100) {
   return;
 }
 
-async function deletetulisan(eleRef) {
-  const tulisan = $(eleRef).html();
-  const letters = tulisan.split("");
+async function deleteSentence(eleRef) {
+  const sentence = $(eleRef).html();
+  const letters = sentence.split("");
   let i = 0;
   while(letters.length > 0) {
     await waitForMs(100);
