@@ -247,3 +247,15 @@ const date = document.querySelector(".date");
 date.innerHTML = year.getFullYear();
 
 console.log("ok");
+
+
+// tombol 
+$(window).ready(function(){
+  $(".nav-link").wrapInner('<div class=nav-link></div>');
+      
+      $(".nav-link").clone().appendTo( $(".nav-link") );
+      
+      $(".nav-link").append('<span class="twist"></span><span class="twist"></span><span class="twist"></span><span class="twist"></span>');
+      
+      $(".twist").css("width", "25%").css("width", "+=3px");
+  });
